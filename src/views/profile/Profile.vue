@@ -136,6 +136,11 @@ export default {
 .van-area,
 .van-picker {
   z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 /* 按钮 */
 .login-btn {

@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-export function axios(config){
+export function request(config){
   //创建axios实例
   const instance = axios.create({
-    baseURL: 'znkd.huiuqian.com',
+    baseURL: 'http://znkd.huiuqian.com/app/index.php?c=entry&op=post1&i=11&do=member&m=evzg_express',
     timeout: 5000
   })
 

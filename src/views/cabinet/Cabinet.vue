@@ -14,7 +14,7 @@
           </div>
           <img src="~assets/img/home/clear.png" alt />
         </van-col>
-        <van-col class="list" span="11">
+        <van-col class="list" span="11" @click="cabinetInfo">
           <div class="list-content">
             <div>小区智能柜</div>
             <p>大号柜F001</p>
@@ -111,6 +111,9 @@ export default {
         this.$toast("刷新成功");
         this.$refs.scroll.closeRefresh();
       }, 1000);
+    },
+    cabinetInfo(){
+      this.$router.push('/cabinetInfo')
     }
   }
 };

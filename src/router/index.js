@@ -17,6 +17,9 @@ const Census = () => import('../views/census/Census.vue')
 const Dispatch = () => import('../views/dispatch/Dispatch.vue')
 const Profile = () => import('../views/profile/Profile.vue')
 
+
+const CabinetInfo = () => import('../views/cabinetInfo/CabinetInfo.vue')
+
 const routes = [
   // 默认显示首页
   {
@@ -42,6 +45,10 @@ const routes = [
   {
     path: '/profile',
     component: Profile
+  },
+  {
+    path: '/cabinetInfo',
+    component: CabinetInfo
   }
 ]
 

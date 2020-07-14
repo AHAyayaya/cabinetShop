@@ -38,8 +38,20 @@
 </template>
 
 <script>
+import {request} from 'network/axios'
+
 export default {
-  name: "Home"
+  name: "Home",
+  created(){
+    this.getData()
+  }, 
+  methods:{
+    getData(){
+      request().then(res =>{
+        console.log(res)
+      })
+    }
+  }
 };
 </script>
 
